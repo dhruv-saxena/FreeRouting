@@ -50,6 +50,26 @@ Additional steps for users of CadSoft-Eagle:
 
 6) Choose in the Files pulldown-menu of Eagle the item "execute Script" and select my_design.scr.
 
+How-to-use
+----------
+
+- Clone this repo and run with `java -jar fr.jar`
+
+Notes on building from sources in the command line
+--------------------------------------------------
+
+These notes are for Ubuntu and obtained from here http://www.freerouting.net/fen/viewtopic.php?f=4&t=255#p793
+
+- `apt-get isntall javahelp2 icedtea-netx-common`
+- Check if both jar files are at the correct position: `/usr/share/java/jh.jar` and `/usr/share/icedtea-web/netx.jar`. If they are not, you must search them and adapt the class path in the script snippet below.
+- In the root of this repo, 
+```
+`( cd sources && javac  -classpath \
+      /usr/share/java/jh.jar:/usr/share/icedtea-web/netx.jar  \
+      `find -type f -name "*.java"` && \
+      jar cfe ../fr.jar gui.MainApplication \
+      `find -type f \( -name "*.class" -o -name "*.properties" \)` )`
+
 
 Here are some instructions how to run the Freerouting project in the NetBeans IDE.
 ==================================================================================
@@ -75,4 +95,6 @@ Here are some instructions how to run the Freerouting project in the NetBeans ID
 10) Build the project again. The router should run now.
 
 For optional parameters of the Freerouting outfile check the usage of the variable p_args in the source file gui/MainApplication.java.
+
+
 
