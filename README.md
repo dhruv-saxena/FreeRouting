@@ -7,7 +7,7 @@ How-to-use
 ----------
 
 - If you don't already have it, download and install JRE (Java Runtime Environment)
-- Clone this repo or download the application from https://github.com/s-gv/FreeRouting/raw/master/fr.jar
+- Clone this repo OR download the application from https://github.com/s-gv/FreeRouting/raw/master/fr.jar
 - Run `java -jar fr.jar` (or double-click / Open With Oracle Java Runtime 7 the downloaded file `fr.jar`)
 
 
