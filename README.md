@@ -35,25 +35,11 @@ For more information please use the online help in the board editor. From here y
 
 If you have further questions or want some feedback, please sent an Email to support@ FreeRouting.net or visit our forum.
 
-Additional steps for users of CadSoft-Eagle
--------------------------------------------
-
-1) Download the latest Eagle2freerouter ulp file
-
-2) Start Eagle and open in the control panel of Eagle for example the design my_design.brd.
-
-3) Choose in the Files pulldown-menu of Eagle the item "execute ULP" and select the Eagle2freerouter ulp file. A file with name my_design.dsn is generated.
-
-4) Start the router, push the "Open Your Own Design" button and select my_design.dsn in the file chooser.
-
-5) After making some changes to the design with the router select "export Eagle session script" in the Files pulldown-menu. A file with name my_design.scr is generated.
-
-6) Choose in the Files pulldown-menu of Eagle the item "execute Script" and select my_design.scr.
-
 How-to-use
 ----------
 
-- Clone this repo and run with `java -jar fr.jar`
+- If you don't already have it, download and install JRE (Java Runtime Environment)
+- Clone this repo (or `Download ZIP`) and run `java -jar fr.jar` (or double-click on `fr.jar` if you're using Windows)
 
 Notes on building from sources in the command line
 --------------------------------------------------
@@ -96,5 +82,20 @@ Here are some instructions how to run the Freerouting project in the NetBeans ID
 
 For optional parameters of the Freerouting outfile check the usage of the variable p_args in the source file gui/MainApplication.java.
 
+
+Additional steps for users of CadSoft-Eagle
+-------------------------------------------
+
+1) Download the latest Eagle2freerouter ulp file
+
+2) Start Eagle and open in the control panel of Eagle for example the design my_design.brd.
+
+3) Choose in the Files pulldown-menu of Eagle the item "execute ULP" and select the Eagle2freerouter ulp file. A file with name my_design.dsn is generated.
+
+4) Start the router, push the "Open Your Own Design" button and select my_design.dsn in the file chooser.
+
+5) After making some changes to the design with the router select "export Eagle session script" in the Files pulldown-menu. A file with name my_design.scr is generated.
+
+6) Choose in the Files pulldown-menu of Eagle the item "execute Script" and select my_design.scr.
 
 
