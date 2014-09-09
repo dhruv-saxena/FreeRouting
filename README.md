@@ -1,7 +1,7 @@
 FreeRouting
 ===========
 
-Java Based Printed Circuit Board Routing Software from FreeRouting.net written by Alfons Wirtz.
+Java Based Printed Circuit Board Routing Software from FreeRouting.net written by Alfons Wirtz. This software is available under the GPLv3 open source license. See the LICENSE file for more details.
 
 How-to-use
 ----------
